@@ -10,6 +10,16 @@ class AppWidget extends StatelessWidget {
     return MaterialApp.router(
       title: 'My Smart App',
       theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: ColorOutlet.primary,
+          foregroundColor: ColorOutlet.secondary,
+          shadowColor: Colors.transparent,
+        ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: ColorOutlet.primary,
+          selectedItemColor: ColorOutlet.accent,
+          unselectedItemColor: ColorOutlet.secondary,
+        ),
         scaffoldBackgroundColor: ColorOutlet.primary,
       ),
       routeInformationParser: Modular.routeInformationParser,
