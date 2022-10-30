@@ -54,7 +54,7 @@ class _BottonNavigationItemState extends State<BottonNavigationItem> {
               Container(
                 width: 40,
                 height: 40,
-                decoration: _isPressed
+                decoration: widget.selected || _isPressed
                     ? const BoxDecoration(
                         color: ColorOutlet.primary,
                         shape: BoxShape.circle,
